@@ -49,15 +49,13 @@ export const metadata: Metadata = {
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ClerkProvider>
-      <html suppressHydrationWarning data-theme="cupcake">
-        <body>
-          <ThemeProvider enableSystem>
-            <ScaffoldEthAppWithProviders>{children}</ScaffoldEthAppWithProviders>
-          </ThemeProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html suppressHydrationWarning data-theme="cupcake">
+      <body>
+        <ThemeProvider enableSystem>
+          <ScaffoldEthAppWithProviders>{children}</ScaffoldEthAppWithProviders>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 };
 
